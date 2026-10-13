@@ -1,0 +1,38 @@
+#CODE
+class Calculator {
+    static int operationsCount = 0;
+    void add(int a, int b) {
+        int r = a + b;
+        operationsCount++;
+        System.out.println("Addition: " + r);
+    }
+    void subtract(int a, int b) {
+        int r = a - b;
+        operationsCount++;
+        System.out.println("Subtraction: " + r);
+    }
+    void multiply(int a, int b) {
+        int r = a * b;
+        operationsCount++;
+        System.out.println("Multiplication: " + r);
+    }
+    void divide(int a, int b) {
+        int r = a / b;
+        operationsCount++;
+        System.out.println("Division: " + r);
+    }
+    public static void main(String[] args) {
+        Calculator c = new Calculator();
+        c.add(10, 5);
+        c.subtract(10, 5);
+        c.multiply(10, 5);
+        c.divide(10, 5);
+        System.out.println("Total Operations: " + operationsCount);
+    }
+}
+#OUTPUT
+Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2
+Total Operations: 4
