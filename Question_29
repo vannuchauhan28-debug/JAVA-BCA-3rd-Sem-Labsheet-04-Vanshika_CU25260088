@@ -1,0 +1,24 @@
+#CODE
+class Employee {
+    String name;
+    double salary;
+    static String organization = "ABC Company";
+    public static void main(String[] args) {
+        String n1 = "Rahul", n2 = "Amit";
+        double s1 = 30000, s2 = 25000;
+        Employee e1 = new Employee();
+        Employee e2 = new Employee();
+        e1.name = n1;
+        e1.salary = s1;
+        e2.name = n2;
+        e2.salary = s2;
+        System.out.println("Organization: " + organization);
+        if (s1 > s2)
+            System.out.println(n1 + " has higher salary");
+        else
+            System.out.println(n2 + " has higher salary");
+    }
+}
+#OUTPUT
+Organization: ABC Company
+Rahul has higher salary
