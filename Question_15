@@ -1,0 +1,18 @@
+#CODE
+class SimpleInterest {
+    double principal, rate, time;
+    static String bank = "SBI";
+    public static void main(String[] args) {
+        double p = 10000, r = 5, t = 2;
+        SimpleInterest s = new SimpleInterest();
+        s.principal = p;
+        s.rate = r;
+        s.time = t;
+        double interest = (p * r * t) / 100;
+        System.out.println("Bank: " + bank);
+        System.out.println("Simple Interest: " + interest);
+    }
+}
+#OUTPUT
+Bank: SBI
+Simple Interest: 1000.0
