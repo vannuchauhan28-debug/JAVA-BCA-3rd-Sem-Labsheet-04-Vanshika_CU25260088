@@ -1,0 +1,25 @@
+#CODE
+class Armstrong {
+    static int totalChecks = 0;
+    void check(int n) {
+        int num = n, sum = 0, rem;
+        totalChecks++;
+        while (num > 0) {
+            rem = num % 10;
+            sum += rem * rem * rem;
+            num /= 10;
+        }
+        if (sum == n)
+            System.out.println("Armstrong Number");
+        else
+            System.out.println("Not Armstrong Number");
+    }
+    public static void main(String[] args) {
+        Armstrong a = new Armstrong();
+        a.check(153);
+        System.out.println("Total Checks: " + totalChecks);
+    }
+}
+#OUTPUT
+Armstrong Number
+Total Checks: 1
