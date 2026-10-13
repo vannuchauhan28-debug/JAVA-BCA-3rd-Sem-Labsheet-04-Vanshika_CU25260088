@@ -1,0 +1,27 @@
+#CODE
+class StudentGrade {
+    String name;
+    int marks;
+    static int passingMarks = 40;
+    public static void main(String[] args) {
+        String n = "Rahul";
+        int m = 85;
+        String grade;
+        StudentGrade s = new StudentGrade();
+        s.name = n;
+        s.marks = m;
+        if (m < passingMarks)
+            grade = "Fail";
+        else if (m >= 80)
+            grade = "A";
+        else
+            grade = "B";
+        System.out.println("Name: " + n);
+        System.out.println("Marks: " + m);
+        System.out.println("Grade: " + grade);
+    }
+}
+#OUTPUT
+Name: Rahul
+Marks: 85
+Grade: A
