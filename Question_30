@@ -1,0 +1,25 @@
+#CODE
+class Library {
+    int booksAvailable = 10;
+    static String libraryName = "Central Library";
+    void issueBook() {
+        int issue = 1;
+        booksAvailable -= issue;
+    }
+    void returnBook() {
+        int book = 1;
+        booksAvailable += book;
+    }
+    public static void main(String[] args) {
+        Library l = new Library();
+        l.issueBook();
+        System.out.println("After Issue: " + l.booksAvailable);
+        l.returnBook();
+        System.out.println("After Return: " + l.booksAvailable);
+        System.out.println("Library: " + libraryName);
+    }
+}
+#OUTPUT
+After Issue: 9
+After Return: 10
+Library: Central Library
