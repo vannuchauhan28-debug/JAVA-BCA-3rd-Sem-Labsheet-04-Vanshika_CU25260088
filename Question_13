@@ -1,0 +1,19 @@
+#CODE
+class Temperature {
+    double celsius;
+    static String scale = "Celsius";
+    public static void main(String[] args) {
+        double c = 25;
+        Temperature t = new Temperature();
+        t.celsius = c;
+        double f = (c * 9 / 5) + 32;
+        double k = c + 273.15;
+        System.out.println("Celsius: " + t.celsius);
+        System.out.println("Fahrenheit: " + f);
+        System.out.println("Kelvin: " + k);
+    }
+}
+#OUTPUT
+Celsius: 25.0
+Fahrenheit: 77.0
+Kelvin: 298.15
