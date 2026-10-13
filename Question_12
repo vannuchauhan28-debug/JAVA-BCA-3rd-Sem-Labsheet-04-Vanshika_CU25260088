@@ -1,0 +1,18 @@
+#CODE
+class StudentMarks {
+    int marks1, marks2, marks3;
+    static String universityName = "COER University";
+    public static void main(String[] args) {
+        int m1 = 80, m2 = 85, m3 = 90;
+        StudentMarks s = new StudentMarks();
+        s.marks1 = m1;
+        s.marks2 = m2;
+        s.marks3 = m3;
+        double avg = (m1 + m2 + m3) / 3.0;
+        System.out.println("University: " + universityName);
+        System.out.println("Average Marks: " + avg);
+    }
+}
+#OUTPUT
+University: COER University
+Average Marks: 85.0
