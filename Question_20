@@ -1,0 +1,20 @@
+#CODE
+class BankAccount {
+    double balance;
+    static String bankCode = "SBI101";
+    public static void main(String[] args) {
+        double b = 5000, amount = 2000;
+        BankAccount a = new BankAccount();
+        a.balance = b;
+        if (amount <= a.balance) {
+            double remaining = a.balance - amount;
+            System.out.println("Remaining Balance: " + remaining);
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+        System.out.println("Bank Code: " + bankCode);
+    }
+}
+#OUTPUT
+Remaining Balance: 3000.0
+Bank Code: SBI101
