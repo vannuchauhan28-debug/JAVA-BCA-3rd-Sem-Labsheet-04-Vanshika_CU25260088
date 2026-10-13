@@ -1,0 +1,29 @@
+#CODE
+class PrimeChecker {
+    static int totalPrimeChecks = 0;
+    void check(int n) {
+        int i;
+        boolean prime = true;
+        totalPrimeChecks++;
+        if (n <= 1)
+            prime = false;
+        for (i = 2; i <= n / 2; i++) {
+            if (n % i == 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime)
+            System.out.println("Prime Number");
+        else
+            System.out.println("Not Prime Number");
+    }
+    public static void main(String[] args) {
+        PrimeChecker p = new PrimeChecker();
+        p.check(7);
+        System.out.println("Total Checks: " + totalPrimeChecks);
+    }
+}
+#OUTPUT
+Prime Number
+Total Checks: 1
