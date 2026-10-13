@@ -1,0 +1,27 @@
+#CODE
+class Triangle {
+    int a, b, c;
+    static String type = "Triangle";
+    public static void main(String[] args) {
+        int x = 3, y = 4, z = 5;
+        Triangle t = new Triangle();
+        t.a = x;
+        t.b = y;
+        t.c = z;
+        if (x + y > z && x + z > y && y + z > x) {
+            System.out.println("Valid Triangle");
+            if (x == y && y == z)
+                type = "Equilateral";
+            else if (x == y || y == z || x == z)
+                type = "Isosceles";
+            else
+                type = "Scalene";
+            System.out.println("Type: " + type);
+        } else {
+            System.out.println("Invalid Triangle");
+        }
+    }
+}
+#OUTPUT
+Valid Triangle
+Type: Scalene
