@@ -1,0 +1,17 @@
+#CODE
+class WordCounter {
+    static String language = "English";
+    void count(String s) {
+        String[] words = s.split(" ");
+        int total = words.length;
+        System.out.println("Word Count: " + total);
+        System.out.println("Language: " + language);
+    }
+    public static void main(String[] args) {
+        WordCounter w = new WordCounter();
+        w.count("Java is easy to learn");
+    }
+}
+#OUTPUT
+Word Count: 5
+Language: English
